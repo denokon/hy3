@@ -62,7 +62,7 @@ public:
 	bool destroy = false;
 	bool dirty = true;
 	bool damaged = true;
-	CAnimatedVariable fade_opacity;
+	CAnimatedVariable<float> fade_opacity;
 
 	Hy3TabBar();
 	void beginDestroy();
@@ -89,8 +89,8 @@ public:
 	int workspace_id = -1;
 	bool hidden = false;
 	Hy3TabBar bar;
-	CAnimatedVariable pos;
-	CAnimatedVariable size;
+	CAnimatedVariable<Vector2D> pos;
+	CAnimatedVariable<Vector2D> size;
 
 	// initialize a group with the given node. UB if node is not a group.
 	Hy3TabGroup(Hy3Node&);

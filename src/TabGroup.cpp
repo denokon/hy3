@@ -12,7 +12,6 @@
 
 Hy3TabBarEntry::Hy3TabBarEntry(Hy3TabBar& tab_bar, Hy3Node& node): tab_bar(tab_bar), node(node) {
 	this->focused.create(
-	    AVARTYPE_FLOAT,
 	    0.0f,
 	    g_pConfigManager->getAnimationPropertyConfig("fadeSwitch"),
 	    nullptr,
@@ -20,7 +19,6 @@ Hy3TabBarEntry::Hy3TabBarEntry(Hy3TabBar& tab_bar, Hy3Node& node): tab_bar(tab_b
 	);
 
 	this->urgent.create(
-	    AVARTYPE_FLOAT,
 	    0.0f,
 	    g_pConfigManager->getAnimationPropertyConfig("fadeSwitch"),
 	    nullptr,
@@ -28,7 +26,6 @@ Hy3TabBarEntry::Hy3TabBarEntry(Hy3TabBar& tab_bar, Hy3Node& node): tab_bar(tab_b
 	);
 
 	this->offset.create(
-	    AVARTYPE_FLOAT,
 	    -1.0f,
 	    g_pConfigManager->getAnimationPropertyConfig("windowsMove"),
 	    nullptr,
@@ -36,7 +33,6 @@ Hy3TabBarEntry::Hy3TabBarEntry(Hy3TabBar& tab_bar, Hy3Node& node): tab_bar(tab_b
 	);
 
 	this->width.create(
-	    AVARTYPE_FLOAT,
 	    -1.0f,
 	    g_pConfigManager->getAnimationPropertyConfig("windowsMove"),
 	    nullptr,
@@ -44,7 +40,6 @@ Hy3TabBarEntry::Hy3TabBarEntry(Hy3TabBar& tab_bar, Hy3Node& node): tab_bar(tab_b
 	);
 
 	this->vertical_pos.create(
-	    AVARTYPE_FLOAT,
 	    1.0f,
 	    g_pConfigManager->getAnimationPropertyConfig("windowsIn"),
 	    nullptr,
@@ -52,7 +47,6 @@ Hy3TabBarEntry::Hy3TabBarEntry(Hy3TabBar& tab_bar, Hy3Node& node): tab_bar(tab_b
 	);
 
 	this->fade_opacity.create(
-	    AVARTYPE_FLOAT,
 	    0.0f,
 	    g_pConfigManager->getAnimationPropertyConfig("windowsIn"),
 	    nullptr,
