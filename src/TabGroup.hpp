@@ -16,12 +16,12 @@ struct Hy3TabBarEntry {
 	std::string window_title;
 	bool destroying = false;
 	CTexture texture;
-	CAnimatedVariable focused;
-	CAnimatedVariable urgent;
-	CAnimatedVariable offset;       // 0.0-1.0 of total bar
-	CAnimatedVariable width;        // 0.0-1.0 of total bar
-	CAnimatedVariable vertical_pos; // 0.0-1.0, user specified direction
-	CAnimatedVariable fade_opacity; // 0.0-1.0
+	CAnimatedVariable<float> focused;
+	CAnimatedVariable<float> urgent;
+	CAnimatedVariable<float> offset;       // 0.0-1.0 of total bar
+	CAnimatedVariable<float> width;        // 0.0-1.0 of total bar
+	CAnimatedVariable<float> vertical_pos; // 0.0-1.0, user specified direction
+	CAnimatedVariable<float> fade_opacity; // 0.0-1.0
 	Hy3TabBar& tab_bar;
 	Hy3Node& node; // only used for comparioson. do not deref.
 
